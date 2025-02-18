@@ -113,6 +113,15 @@ class WindowManager {
             skipTaskbar: false
         })
 
+        this.win.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
+
+            // Prevent having error
+            event.preventDefault()
+            // and continue
+            callback(true)
+        
+        })
+        
         this.win.webContents.openDevTools()
 
         this.win.loadFile('index.html');

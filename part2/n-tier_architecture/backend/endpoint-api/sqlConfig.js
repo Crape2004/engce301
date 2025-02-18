@@ -1,6 +1,6 @@
 var dbconfig = {
     development: {
-        server: '192.168.1.17',
+        server: '192.168.1.36',
         database:'team6_engce301_db',
         user:'team6',
         password:'P@ssw0rd',
